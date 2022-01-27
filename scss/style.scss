@@ -1,0 +1,289 @@
+* {               
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+body {
+    background: url(../imagenes/local.jpeg)
+}
+
+body {
+    background-attachment: fixed;
+}
+
+header{
+    top: 0;
+    position: fixed;
+    height: 120px;
+    background-color: #b12424;
+    padding: 20px;
+    font-family: 'Staatliches', cursive;
+    width: 100%;
+    display: flex;
+}
+
+    .logo {
+        font-size: 30px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .navbar-nav  {
+        margin-left: 65%;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+    
+    .nav-link:hover, a:focus {
+        background-size: 100% 2px;
+    }
+    
+    
+    .nav-link:hover {
+        color: rgb(197, 197, 197);
+        transition: .5s;
+    }
+
+
+
+    .portada-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 15%;
+        margin-bottom: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ventas-p {
+        display: flex;
+        justify-content: center;
+        
+        font-size: 50px;
+        font-family: 'Staatliches', cursive;
+        background-color: black;
+        color: white;
+    }
+
+    .marcas {
+        margin-top: 2%;
+        height: 110px;
+        width: 280px;
+        box-shadow: 10px 10px 30px #000;
+        margin-left: 1%;
+    }
+
+
+    .div-marcas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #sucursales {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        font-size: 50px;
+        font-family: 'Staatliches', cursive;
+        background-color: black;
+        color: white;
+    }
+    
+    iframe {
+        border-radius: 20px;
+    }
+    
+    .iframe-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .maps {
+        height: 350px;
+        width: 500px;
+        margin-right: 5px;
+    }
+    
+    .maps2 {
+        height: 350px;
+        width: 500px;
+        margin-left: 5px;
+    }
+
+    .maps3 {
+        height: 350px;
+        width: 500px;
+        margin-top: 10px;
+    }
+
+        .horarios {
+            font-size: 50px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            font-family: 'Staatliches', cursive;
+            background-color: black;
+            color: white;
+        }
+
+        .triunvirato {
+            font-size: 20px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            font-family: 'Staatliches', cursive;
+            background-color: rgba(163, 28, 28, 0.589);
+            color: white;
+            margin-bottom: 0;
+            word-spacing: 5px;
+        }
+
+
+footer {
+    background-color: #212121;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+
+    .div-nosotros {
+        color: rgb(218, 214, 214);
+        font-family: 'Courier New', Courier, monospace;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .icon-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon {
+        color: rgb(218, 214, 214);
+        font-size: 30px;
+    }
+    
+    .icon:hover{
+        color: white;
+        transition: .5s;
+    }
+    
+    .insta {
+        margin-right: 20%;
+    }
+
+    .face {
+        margin-right: 20%;
+    }
+}
+
+
+
+
+/* RESPONSIVE */
+
+/* MOBILE */
+
+@media only screen and (max-width: 414px) {
+    header {
+        height: 80px;
+        padding: 10px;
+    }
+    .logo {
+        font-size: 17px;
+    }
+
+    .button {
+        font-size: 15px;
+    }
+
+    .nav-ul  {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        background-image: none;
+    }
+
+    .div-cel {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: black 5px 5px 15px 5px;
+        margin-top: 17px;
+    }
+
+
+    .portada-img {
+        height: 180px;
+        margin-top: 100px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ventas-p {
+        margin-top: 1px;
+        font-size: 25px;
+    }
+
+    .div-marcas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .marcas {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #sucursales {
+        font-size: 25px;
+    }
+
+    .maps, .maps2, .maps3 {
+        height: 300px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .iframe-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .horarios {
+        font-size: 30px;
+    }
+
+    .table-m {
+        font-size: 8px;
+    }
+
+    .triunvirato {
+        font-size: 10px;
+        word-spacing: 3px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+}
